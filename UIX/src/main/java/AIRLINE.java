@@ -1681,7 +1681,6 @@ int d;
           p.regMBpclass[regMBcount] =classbox.getText();
           p.regMBpAge[regMBcount] = agebox.getText();
           p.regMBpfare[regMBcount] = faretext.getText();
-          p.regMBpfare[regVMpINS] = 
           
         //name
            passname.setText(p.regMBp[regMBcount]);
