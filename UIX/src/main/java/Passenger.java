@@ -1,6 +1,8 @@
 
 public class Passenger extends AIRLINE {
     
+    //default icon, custom title
+    
     //MANILA TO BATANES                         1
     //regular
     String[] regMBp = new String[47]; // Passenger Name

@@ -2442,7 +2442,17 @@ int d;
     }//GEN-LAST:event_agebox1ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-         Passenger p= new Passenger();
+        
+        int value = JOptionPane.showConfirmDialog(this,"Would you like to avail Baggage?");
+        
+        if (value == 0){
+            System.out.println ("Yes");
+        }
+        else{
+            System.out.println ("No");
+        }
+        
+        Passenger p= new Passenger();
         Destination dest = new Destination();
         
         if (d==0)//MANILA TO BATANES
