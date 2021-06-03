@@ -2442,16 +2442,19 @@ int d;
     }//GEN-LAST:event_agebox1ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        
-        int value = JOptionPane.showConfirmDialog(this,"Would you like to avail Baggage?");
-        
-        if (value == 0){
-            System.out.println ("Yes");
-        }
-        else{
-            System.out.println ("No");
-        }
-        
+   
+    int choose = JOptionPane.showConfirmDialog(null, "<html><br>Baggage Fee per Person <br><br>Flight Type | Baggage Fee<br>Private Class | 1,250.00<br>Business Class | 2, 850.00<br>Regular CLass | 950.00</html>" );
+    if (choose == JOptionPane.YES_OPTION) {
+      JOptionPane.showConfirmDialog(null, "<html><br>Would you like to avail travel insurance? <br><br> Flight Type | Travel Insurance <br>Private Class | 4,500.00<br>Business Class | 6, 500.00<br>Regular CLass | 950.00</html>");
+      
+      if (choose == JOptionPane.YES_OPTION) {
+      JOptionPane.showConfirmDialog(null, "You Clicked YES");
+    } else if (choose == JOptionPane.NO_OPTION) {
+      JOptionPane.showMessageDialog(null, "You Clicked NO");
+    }
+    } else if (choose == JOptionPane.NO_OPTION) {
+      JOptionPane.showMessageDialog(null, "You Clicked NO");
+    }
         Passenger p= new Passenger();
         Destination dest = new Destination();
         
